@@ -6,9 +6,25 @@
   --blu: #1504bf;
   --blu-dark: #1c1473;
   --blu-dark-tr: #1c1473e0;
-  --arancione: #bf810d;
+  --arancione: #f4b942;
   --border-radius: 0.8rem;
   --black: #23231a;
+}
+
+.text-arancione {
+  color: var(--arancione);
+}
+
+.text-bludark {
+  color: var(--blu-dark);
+}
+
+.text-nero {
+  color: var(--black);
+}
+
+.bg-bludark {
+  background-color: var(--blu-dark);
 }
 
 .p-navbar {
@@ -54,4 +70,14 @@
   color: var(--arancione);
   background-color: var(--blu);
   border-radius: 20px;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
+  opacity: 90%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
