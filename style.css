@@ -11,6 +11,10 @@
   --black: #23231a;
 }
 
+.mg-top {
+  margin-top: 200px;
+}
+
 .text-arancione {
   color: var(--arancione);
 }
@@ -21,6 +25,10 @@
 
 .btn-masthead {
   border-radius: 1rem;
+}
+
+.btn-masthead:focus {
+  box-shadow: none;
 }
 
 .text-nero {
