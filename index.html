@@ -74,11 +74,11 @@
                 I nostri podotti
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Hardware</a></li>
+                <li><a class="dropdown-item" href="#">Software</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Varie</a>
                 </li>
               </ul>
             </li>
@@ -113,7 +113,9 @@
     <div class="container-fluid bg-danger">
       <div class="contain mg-top">
         <div class="row justify-content-center" id="categories-wrapper">
-          <h1 class="text-center">Alcuni Prodotti</h1>
+          <h1 class="text-center text-bludark fw-bolder display-5">
+            Alcuni Prodotti
+          </h1>
         </div>
       </div>
     </div>
@@ -153,11 +155,14 @@
         <div class="card p-card" style="width: 18rem">
             <img src="${category.img}" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">${category.title}</h5>
-              <p class="card-text">
+              <h5 class="card-title text-white">${category.title}</h5>
+              <p class="card-text text-white">
                 ${category.prezzo}
               </p>
-              <a href="#" class="btn btn-danger">Aggiungi al Carrello</a>
+              <a href="#" class="btn btn-danger">Aggiungi al carrello <i class="fas fa-shopping-cart"></i></a>
+              <div> 
+                <button class="btn text-white fw-bold mt-2 bg-danger">Acquista ora</button>
+            </div>
             </div>
           </div>
                 
