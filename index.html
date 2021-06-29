@@ -103,6 +103,7 @@
             >
               <option class="text-white" value="1">Hardware</option>
               <option class="text-white" value="2">Software</option>
+              <option class="text-white" value="3">Varie</option>
             </select>
           </div>
         </div>
@@ -110,23 +111,9 @@
     </header>
 
     <div class="contain mg-top">
-      <div class="row" id="categories-wrapper">
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card" style="width: 16rem">
-            <img
-              src="https://images.unsplash.com/photo-1539683255143-73a6b838b106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+      <div class="row justify-content-center" id="categories-wrapper">
+        
+          
         </div>
       </div>
     </div>
@@ -134,24 +121,60 @@
     <div style="height: 2000px"></div>
 
     <script>
-      let categoriesWrapper = document.querySelector("#categories-wrapper");
+      let categoriesWrapper = document.querySelector("#categories-wrapper")
 
       let categories = [
+        {
+          title: 'Tastiera Meccanica',
+          prezzo: "120",
+          img: "./img/tastiera.jpg",
+        },
+        {
+          title: "Iphone 12",
+          prezzo: "120 Euro ",
+          img: "https://images.unsplash.com/photo-1539683255143-73a6b838b106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80",
+        },
+        {
+          title: 'Iphone 12',
+          prezzo: "120",
+          img: "https://images.unsplash.com/photo-1539683255143-73a6b838b106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80",
+        },
         {
           title: "Iphone 12",
           prezzo: "120",
           img: "https://images.unsplash.com/photo-1539683255143-73a6b838b106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80",
         },
       ];
+
+      categories.forEach(category => {
+    let card = document.createElement('div');
+    card.classList.add('col-12', 'col-sm-6', 'col-lg-3', 'my-3')
+    card.innerHTML =
+        `
+        <div class="card" style="width: 16rem">
+            <img src="${category.img}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${category.title}</h5>
+              <p class="card-text">
+                ${category.prezzo}
+              </p>
+              <a href="#" class="btn btn-primary">Aggiungi al Carrello</a>
+            </div>
+          </div>
+                
+                `
+
+    categoriesWrapper.appendChild(card)
+
+        })
     </script>
 
     <script src="./script.js"></script>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    // <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
   </body>
 </html>
