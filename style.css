@@ -93,3 +93,9 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.p-card {
+  background-color: var(--arancione);
+  border: none;
+  border-radius: var(--border-radius);
+}
