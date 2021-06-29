@@ -1,0 +1,25 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --blu: #1504bf;
+  --blu-dark: #1c1473;
+  --blu-dark-tr: #1c1473e0;
+  --arancione: #bf810d;
+  --border-radius: 0.8rem;
+  --black: #23231a;
+}
+
+.p-navbar {
+  background-color: var(--blu-dark-tr);
+  transition: 0.5s;
+}
+
+.p-navbar .nav-link {
+  color: white;
+}
+
+.p-navbar .navbar-brand {
+  color: var(--arancione);
+}
