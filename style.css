@@ -18,8 +18,40 @@
 
 .p-navbar .nav-link {
   color: white;
+  font-size: 14pt;
+  transition: all 0.5s;
+  font-weight: 600;
+}
+
+.p-navbar .nav-link:hover {
+  color: white;
+  background-color: var(--arancione);
+  border-radius: 20px;
+  font-size: 14pt;
+  transition: all 0.5s;
+  font-weight: 600;
+  /* transform: scale(1.1); */
 }
 
 .p-navbar .navbar-brand {
   color: var(--arancione);
+}
+
+.p-navbar .p-nav-scolled {
+  background-color: var(--arancione) !important;
+  /* backdrop-filter: blur(15px); */
+}
+
+.p-navbar .p-nav-scrolled .nav-link {
+  color: var(--arancione);
+}
+
+.p-navbar .p-nav-scrolled .navbar-brand {
+  color: var(--blu-dark);
+}
+
+.p-navbar .p-nav-scrolled .nav-link:hover {
+  color: var(--arancione);
+  background-color: var(--blu);
+  border-radius: 20px;
 }
