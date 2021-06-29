@@ -4,6 +4,7 @@
 
 :root {
   --blu: #1504bf;
+  --blu-tr: #1404bfd0;
   --blu-dark: #1c1473;
   --blu-dark-tr: #1c1473e0;
   --arancione: #ff220c;
@@ -95,7 +96,9 @@
 }
 
 .p-card {
-  background-color: var(--arancione);
+  background-color: var(--blu-tr);
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
   border: none;
   border-radius: var(--border-radius);
 }
